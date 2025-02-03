@@ -284,10 +284,7 @@ export default function BrowsePage() {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
           <div className="bg-white p-6 rounded-lg max-w-md w-full">
             <h2 className="text-xl font-bold mb-4">Submit a Review</h2>
-            <ReviewForm
-              resourceId={selectedResource}
-              onReviewSubmit={(rating, comment) => handleReviewSubmit(selectedResource, rating, comment)}
-            />
+        
             <Button variant="outline" className="mt-4" onClick={() => setSelectedResource(null)}>
               Cancel
             </Button>
